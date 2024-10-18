@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOSHI's Bakery</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Icon Fonts -->
+    <script src="https://kit.fontawesome.com/ac7068e37d.js" crossorigin="anonymous"></script>
+
+    <!-- CSS for styles -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #A6A2A2;
+        }
+
+        header {
+            background-color: #A39594;
+            color: #FBFBF2;
+            padding: 12px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #847577;
+            color: black;
+            text-align: center;
+            padding: 6px 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+            margin: 1px auto;
+            padding: 20px;
+            max-width: 1200px;
+
+        }
+
+        .card-wrapper {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #CFD2CD;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 400px;
+            margin: 50px;
+            box-shadow: 0 4px 6px red;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 8px 0 ;
+            transition: 0.3s
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #333;
+            font-family: Playfair Display;
+        }
+
+        .card p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .card button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #555;
+        }
+
+        .card:hover {
+            box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2);
+        }
+
+        .option-ribbon {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        padding: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+        }
+
+        .ribbon-btn {
+        background-color: #847577;
+        color: white;
+        border: none;
+        padding: 5px 80px;
+        margin: 0 100px;
+        font-size: 1.3em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: Playfair Display;
+        }
+
+        .ribbon-btn:hover {
+            background-color: #555;
+        }
+
+        h1{
+            font-family: Playfair Display;
+            font-size: 45px;
+        }
+
+ .about-section {
+            width: 80%;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #CFD2CD;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about-text {
+            width: 50%;
+            padding-right: 20px;
+        }
+
+        .about-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #b35a1f;
+        }
+
+        .about-text p {
+            font-size: 1.1em;
+            color: #4a4a4a;
+            line-height: 1.6em;
+        }
+
+        .about-image img {
+            width: 450px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-text, .about-image {
+                width: 100%;
+                padding: 0;
+            }
+
+            .about-image img {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- heading -->
+<header>
+    <h1>♫  Welcome to Yoshi's Bakery  ♫ </h1>
+    <h6>Sponsored and Heavily Inspired by; KUMORI Bakery</h6>
+</header>
+<!-- Ribbon -->
+<div class="option-ribbon">
+    <button class="ribbon-btn">🏠Home</button>
+    <button class="ribbon-btn">⚙️  Settings</button>
+    <button class="ribbon-btn">💵Payment</button>
+    <button class="ribbon-btn">🛒Cart</button>
+
+</div>
+
+<!-- About us page -->
+ <div class="about-section">
+        <h1>About Us</h1>
+        <p>Welcome to our bakery, a place where love and tradition meet to create the most delightful pastries. 
+        Our recipes are inspired by my mother's timeless bakes, filled with warmth, care, and that special touch only a mother can give. 
+        From the fluffiest croissants to the sweetest tarts, every treat carries a piece of our family's heritage.</p>
+
+        <img src="https://media.istockphoto.com/id/1356124772/photo/asian-mother-and-daughters.jpg?s=612x612&w=0&k=20&c=SStfedCSQygZTv4uhW5UTiO56L6KYXuiuXKrYFco4C8=" alt="Mom cooking image">
+    </div>
+    
+<!-- product cards -->
+<div class="container">
+    <div class="card-wrapper">
+        <!-- Product 1 -->
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/products/NYHanjukuGrabfood.jpg?v=1622431931" alt="Product 1">
+            <h3>Hanjuku Cheesecake</h3>
+            <p>Original Hanjuku with a NYC Cheesecake Twist!</p>
+            </p><br>₱68</p>
+            <button>Add to cart</button>
+        </div>
+
+        
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/products/Double-Cheese_1f65513b-c7d9-41b8-8aaf-2c1a46b03495.png?v=1649129684&width=533" alt="Product 2">
+            <h3>Light Double Cheesecake</h3>
+            <p>Double Layered Cheesecake with a light touch</p>
+            <p><br>₱695</p>
+            <button>Add to cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/products/hanjuku-cheese.jpg?v=1649129833" alt="Product 3">
+            <h3>Hanjuku Creamy Cheese</h3>
+            <p>Original Bite-sized pastries with a hint of Smooth Sweet Cream and Cheese</p>
+            <p><br>₱68</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/products/CoffeeCaramelChiffonSquare.jpg?v=1636205114&width=360" alt="Product 2">
+            <h3>Coffee Caramel Chiffon</h3>
+            <p>6 inch Caramel based Cake with Toppings of Chiffon and Coffee Grounds</p>
+            <p><br>₱499</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/products/ChocoVelvetGrabfood_f471eb71-23f4-4d03-8633-ebf461766a57.jpg?v=1622562123&width=360" alt="Product 2">
+            <h3>Choco Velvet Cake</h3>
+            <p>The Original Chocolate cake with a Velvetty texture to the Max of Smoothness!</p><p><br>₱459</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/products/JapaneseChocoRollProductShot.jpg?v=1617621791&width=360" alt="Product 2">
+            <h3>Japanese Chocolate Roll</h3>
+            <p>Fluffy Choco-filled bun with Dark Chocolate Drizzles</p>
+            <p><br>₱65</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/files/StrawberryBloomSqaure.jpg?v=1706087709&width=360" alt="Product 2">
+            <h3>Strawberry Bloom</h3>
+            <p>Almond Complimented Bun/Donut with an Open Filling of Strawberry Jam and Bits</p>
+            <p><br>₱70</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/files/BlueberryBloomSquare.jpg?v=1706087667&width=360" alt="Product 2">
+            <h3>Blueberry Bloom</h3>
+            <p>Almond Complimented Bun/Donut with an Open Filling of Blueberry Jam and Bits</p>
+            <p><br>₱70</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/files/RoastedAlmondBunSquare.jpg?v=1706087836&width=360" alt="Product 2">
+            <h3>Roasted Almond Bun</h3>
+            <p>Sweet Vanilla bun with topped Cream and Almonds</p>
+            <p><br>₱75</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/files/MiniFlossPillows_lowres.jpg?v=1724821753&width=360" alt="Product 2">
+            <h3>Mini Floss Pillow</h3>
+            <p>Pork Floss with a small Bun to satisfy Savory Cravings</p>
+            <p><br>₱45</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/files/MiniCheesePillows_lowres.jpg?v=1724819230&width=360" alt="Product 2">
+            <h3>Mini Cheese Rolls</h3>
+            <p>Fluffy Bites of Cheesy Heaven</p>
+            <p><br>₱50</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kumori.com.ph/cdn/shop/files/Karafuru-MatchaGF.jpg?v=1693275886&width=360">
+            <h3>Karafufu Pan; Matcha</h3>
+            <p>Big and Fluffy Matcha buns with Vanilla cream inside</p>
+            <p><br>₱99</p>
+            <button>Add to cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- address/credits footer -->
+<footer>
+    <p>&copy; Shalanie Lanette G. Garabiles|9-Ruby</p>
+    <h6>Guided by|
+        <a href="https://www.w3schools.com/">W3 Schools</a>
+        <br>
+        Additional Styles Inspo by|
+        <a href="https://chatgpt.com/">ChatGPT</a>
+        <br>
+        Color Palette by|
+        <a href="https://coolors.co/">Coolors</a>
+    </h6>
+</footer>
+
+</body>
+</html>
